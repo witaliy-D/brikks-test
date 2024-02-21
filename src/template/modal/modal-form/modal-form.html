@@ -1,0 +1,72 @@
+<div id="modal-form" class="modal modal-form modal--theme-primary" data-modal="form">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__bg-close" data-modal-close=""></div>
+            <div class="container modal-form__box">
+                <div class="modal-form__wrapper">
+                    <button class="modal-form__close modal__close btn" data-modal-close="">
+                        <svg class="icon">
+                            <use xlink:href="svg-sprite/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <div class="modal-form__inner">
+                        <div class="modal-form__content">
+                            <h4 class="title title--size-md mb-15 t:uppercase" data-modal-title="">
+                                Есть вопросы?
+                            </h4>
+                            <p class=" mb-40 text font-secondary t:300 ">
+                                Оставьте заявку, специалисты компании ответят на все Ваши вопросы
+                            </p>
+                            <form id="form-modal" class="form js-form" action="#" data-next-page="/thanks.html">
+                                <input type="hidden" name="form-title">
+                                <input type="hidden" name="info">
+
+                                <label class="form-field mb-22" data-input-box="">
+                                    <span class="form-field__label">Ваше ФИО</span>
+                                    <input class="form-field__input" placeholder="text" type="text" name="name"
+                                        data-input="" required="">
+                                    <span class="form-field__text">Иванов Иван Иванович</span>
+                                    <span class="form-field__required">
+                                        Иванов Иван Иванович
+                                    </span>
+                                </label>
+                                <label class="form-field form-field--phone mb-22" data-input-box="">
+                                    <span class="form-field__label">Ваш телефон</span>
+                                    <!-- <span class="form-field__input-wrapper"> -->
+                                    <input class="form-field__input" data-mask="+7 (999) 999-99-99" data-input=""
+                                        placeholder="phone" type="tel" name="phone" required="">
+                                    <!-- </span> -->
+                                    <span class="form-field__text">+7 (999) 999-99-99</span>
+                                    <span class="form-field__required">
+                                        +7 (999) 999-99-99
+                                    </span>
+                                </label>
+
+                                <div class="form-send w-250">
+                                    <div class="form-send__message">
+                                        <div class="form-send__loading"><span></span></div>
+                                        <p class="form-send__error">Что-то пошло не так. <br> Заявка не отправлена.
+                                        </p>
+                                    </div>
+
+                                    <button type="submit"
+                                        class="form-send__btn btn btn-primary btn--theme-primary btn-primary--lg _icon ">
+                                        <span class="t:600">Оставить заявку</span>
+                                        <svg class="icon t:size-20">
+                                            <use xlink:href="svg-sprite/sprite.svg#icon-arrow-up"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-form__img">
+                            <img src="images/global/form.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

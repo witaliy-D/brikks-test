@@ -1,0 +1,39 @@
+.btn-primary {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    align-items: center;
+    justify-content: center;
+    //*
+    font-weight: 500;
+    //*
+    border-radius: 15px 5px 5px 5px;
+
+    &._icon {
+        //justify-content: space-between;
+        gap: size(12);
+    }
+    &--sm {
+        min-height: size(50);
+        padding: size(10) size(20);
+    }
+    &--md {
+        //min-height: size(60);
+        padding: size(5) size(9);
+        font-size: size(14);
+
+        @include media(md) {
+            padding: size(10) size(19);
+            font-size: size(16);
+        }
+    }
+    &--lg {
+        //min-height: size(70);
+        padding: size(10);
+        font-size: size(14);
+
+        @include media(md) {
+            padding: size(15);
+            font-size: size(16);
+        }
+    }
+}

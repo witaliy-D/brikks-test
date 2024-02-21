@@ -1,0 +1,138 @@
+.form-field {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    flex-direction: column;
+    //align-items: center;
+    //*
+    position: relative;
+    width: 100%;
+    font-size: size(16);
+    font-weight: 500;
+    //border: none;
+    --field-input-color: #353535;
+    border-bottom: 1px solid rgb(44, 60, 68);
+    //*
+
+    // &__input-wrapper {
+    //     position: relative;
+
+    //     &:before {
+    //         position: absolute;
+    //         content: "";
+    //         width: size(20);
+    //         height: size(20);
+    //         left: 0;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         background-color: red;
+    //     }
+    // }
+
+    &__input {
+        color: var(--field-input-color);
+        width: 100%;
+        display: block;
+        border: 0;
+        transition: 0s;
+
+        &::placeholder {
+            opacity: 0;
+        }
+        &:focus,
+        &:not(:placeholder-shown) {
+            & ~ .form-field__text {
+                opacity: 0;
+            }
+        }
+        &:-webkit-autofill {
+            -webkit-text-fill-color: var(--field-input-color);
+            transition: background-color 500000s ease-in-out 0s;
+        }
+    }
+    //*
+    &__error,
+    &__input,
+    &__required,
+    &__text {
+        font-size: 1em;
+        transition-duration: $td;
+        padding: size(14) 0;
+
+        // &._icon {
+        //     padding-left: size(30);
+        // }
+    }
+
+    &--phone {
+        .form-field__input,
+        .form-field__error,
+        .form-field__required,
+        .form-field__text {
+            padding-left: size(30);
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: size(19);
+            height: size(11);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: size(17);
+            background-image: url("../svg-sprite/sprite.svg#flag");
+            background-size: contain;
+            background-position: center;
+        }
+    }
+    //*
+    &__error,
+    &__required,
+    &__text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        //top: 50%;
+        //transform: translateY(-50%);
+        pointer-events: none;
+        width: 100%;
+    }
+    &__text {
+        color: #151515;
+        opacity: 0.5;
+        span {
+            color: #151515;
+        }
+    }
+    &__error,
+    &__required {
+        color: #151515;
+        width: 100%;
+        opacity: 0;
+    }
+    //* Mod invalid (class js)
+    // text/tel/password
+    &._required {
+        & > *:not(.form-field__label) {
+            opacity: 0;
+        }
+        .form-field__required {
+            opacity: 0.5;
+        }
+    }
+    &._error {
+        & > *:not(.form-field__label) {
+            opacity: 0;
+        }
+        .form-field__error {
+            opacity: 0.5;
+        }
+    }
+
+    &__label {
+        font-size: size(20);
+        line-height: 1.2;
+        margin-bottom: size(10);
+        text-transform: uppercase;
+    }
+}

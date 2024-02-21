@@ -1,0 +1,31 @@
+//*
+
+//*
+$columns: 12;
+//*
+$grid-gap: (
+    "default": (
+        "gap-x": size(10),
+        "gap-y": size(10),
+        "container-gap": size(10),
+    ),
+    //'md': (
+    //    'gap-x': size(20),
+    //    'gap-y': size(20),
+    //),
+    "lg":
+        (
+            "gap-x": size(16),
+            "gap-y": size(16),
+            "container-gap": size(20),
+        ),
+);
+
+//* Размеры контайнера (.container)
+$container-max-width: (
+    "sm": 440px,
+    "xs": 520px,
+    "md": 720px,
+    "lg": size(1460),
+    //"xl": size(1200),
+);

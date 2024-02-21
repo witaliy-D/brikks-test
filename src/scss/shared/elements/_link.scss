@@ -1,0 +1,43 @@
+.link {
+    color: currentColor;
+    padding: 0;
+    border: 0;
+    transition: 0.4s;
+
+    @media (pointer: fine) {
+        &:hover {
+            color: $color-secondary-hover;
+        }
+        &:active {
+            color: $color-secondary-active;
+        }
+    }
+    &:active {
+        color: $color-secondary-active;
+    }
+    &-decor {
+        color: currentColor;
+        position: relative;
+        text-decoration: none;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            border-bottom: 1px solid currentColor;
+            transform: scaleX(0);
+            transition-duration: $td;
+        }
+        @media (pointer: fine) {
+            &:hover {
+                &:before {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    &--line {
+        text-decoration: underline;
+    }
+}

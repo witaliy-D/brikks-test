@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>main</title>
+    <meta name="description" content="">
+
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+<link rel="icon" href="favicon/favicon.svg">
+
+    <!--<meta property="og:title" content="" />
+    <meta property="og:description"  content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/global/soc.jpg" />-->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <meta name="format-detection" content="telephone=no">
+    
+</head>
+
+<body data-scroll-offset>
+
+    
+
+
+    <header id="header" class="header" data-scroll-offset>
+    <div class="container">
+        <div class="header__inner">
+            <button type="button" class="btn btn-primary btn-primary--md btn--theme-white _icon header__btn"
+                id="menu-modal-open">
+                <svg class=" icon t:size-24">
+                    <use xlink:href="svg-sprite/sprite.svg#icon-menu"></use>
+                </svg>
+                <span>Наши услуги</span>
+            </button>
+            <a href="/" class="logo">
+                <img src="images/global/logo.png" alt="Logo">
+            </a>
+            <div class="header__contact">
+                <a href="tel:+79999999999" class="phone link-decor t:600 text">+7 (999) 999-99-99</a>
+                <button type="button" class="link t:size-14 t:500 header__call" data-trigger="#modal-form, modalOpen">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div id="home" class="home">
+    <div class="container">
+        <div class="home__inner">
+            <div class="home__content">
+                <img src="images/home/logo-home.png" alt="logo-home">
+                <p class="home__info font-secondary t:300 text">
+                    Группа стабильно развивающихся компаний, работающих на рынке инженерных и строительных услуг.
+                </p>
+            </div>
+            <div class="home__img">
+                <img src="images/home/home.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+
+    <footer class="footer">
+    <div class="container">
+
+
+    </div>
+</footer>
+
+    <div id="menu-modal" class="menu-modal">
+    <div class="menu-modal__wrapper">
+        <div class="container box-y">
+            <div class="menu-modal__box">
+                <div class="menu-modal__item">
+                    <div class="menu-modal__content ">
+                        <a href="#" class="menu-modal__content-item">
+                            <div class="menu-modal__content-img">
+                                <img src="images/global/logo-1.png" alt="1">
+                            </div>
+                            <div class="menu-modal__content-info">
+                                <span>системы безопасности</span>
+                                <svg class="icon t:size-15">
+                                    <use xlink:href="svg-sprite/sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="menu-modal__content-item">
+                            <div class="menu-modal__content-img">
+                                <img src="images/global/logo-2.png" alt="1">
+                            </div>
+                            <div class="menu-modal__content-info">
+                                <span>строительно-монтажные работы</span>
+                                <svg class=" icon icon--color-primary t:size-15">
+                                    <use xlink:href="svg-sprite/sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="menu-modal__content-item">
+                            <div class="menu-modal__content-img">
+                                <img src="images/global/logo-3.png" alt="3">
+                            </div>
+                            <div class="menu-modal__content-info">
+                                <span>инженерные системы</span>
+                                <svg class=" icon t:size-15">
+                                    <use xlink:href="svg-sprite/sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-modal__item">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="modal-form" class="modal modal-form modal--theme-primary" data-modal="form">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__bg-close" data-modal-close=""></div>
+            <div class="container modal-form__box">
+                <div class="modal-form__wrapper">
+                    <button class="modal-form__close modal__close btn" data-modal-close="">
+                        <svg class="icon">
+                            <use xlink:href="svg-sprite/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <div class="modal-form__inner">
+                        <div class="modal-form__content">
+                            <h4 class="title title--size-md mb-15 t:uppercase" data-modal-title="">
+                                Есть вопросы?
+                            </h4>
+                            <p class=" mb-40 text font-secondary t:300 ">
+                                Оставьте заявку, специалисты компании ответят на все Ваши вопросы
+                            </p>
+                            <form id="form-modal" class="form js-form" action="#" data-next-page="/thanks.html">
+                                <input type="hidden" name="form-title">
+                                <input type="hidden" name="info">
+
+                                <label class="form-field mb-22" data-input-box="">
+                                    <span class="form-field__label">Ваше ФИО</span>
+                                    <input class="form-field__input" placeholder="text" type="text" name="name"
+                                        data-input="" required="">
+                                    <span class="form-field__text">Иванов Иван Иванович</span>
+                                    <span class="form-field__required">
+                                        Иванов Иван Иванович
+                                    </span>
+                                </label>
+                                <label class="form-field form-field--phone mb-22" data-input-box="">
+                                    <span class="form-field__label">Ваш телефон</span>
+                                    <!-- <span class="form-field__input-wrapper"> -->
+                                    <input class="form-field__input" data-mask="+7 (999) 999-99-99" data-input=""
+                                        placeholder="phone" type="tel" name="phone" required="">
+                                    <!-- </span> -->
+                                    <span class="form-field__text">+7 (999) 999-99-99</span>
+                                    <span class="form-field__required">
+                                        +7 (999) 999-99-99
+                                    </span>
+                                </label>
+
+                                <div class="form-send w-250">
+                                    <div class="form-send__message">
+                                        <div class="form-send__loading"><span></span></div>
+                                        <p class="form-send__error">Что-то пошло не так. <br> Заявка не отправлена.
+                                        </p>
+                                    </div>
+
+                                    <button type="submit"
+                                        class="form-send__btn btn btn-primary btn--theme-primary btn-primary--lg _icon ">
+                                        <span class="t:600">Оставить заявку</span>
+                                        <svg class="icon t:size-20">
+                                            <use xlink:href="svg-sprite/sprite.svg#icon-arrow-up"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-form__img">
+                            <img src="images/global/form.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <script src="js/libraries/libraries.js"></script>
+    <script defer src="js/main/main.js"></script>
+    
+</body>
+
+</html>

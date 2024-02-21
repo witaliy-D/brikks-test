@@ -1,0 +1,15 @@
+.logo {
+    display: inline-block;
+    flex-shrink: 0;
+    line-height: 0;
+
+    img {
+        width: size(99);
+        height: sise(25);
+
+        @include media(lg) {
+            width: size(197);
+            height: sise(50);
+        }
+    }
+}

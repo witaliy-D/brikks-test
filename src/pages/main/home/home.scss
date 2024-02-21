@@ -1,0 +1,56 @@
+.home {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: size(300);
+        bottom: 0;
+        left: 41%;
+        background-image: url(../images/home/bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+        @include media(md) {
+            height: size(420);
+        }
+
+        @include media(lg) {
+            left: 36%;
+            width: size(1260);
+            height: 100%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        padding-top: size(20);
+        padding-bottom: size(35);
+
+        @include media(lg) {
+            padding-top: size(43);
+            padding-bottom: size(80);
+        }
+    }
+
+    &__img {
+        line-height: 0;
+    }
+
+    &__content {
+        @include media(lg) {
+            position: absolute;
+            max-width: size(645);
+            left: 10%;
+            top: size(70);
+        }
+    }
+
+    &__info {
+        max-width: size(500);
+        margin-top: size(10);
+    }
+}

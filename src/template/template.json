@@ -1,0 +1,10 @@
+{
+    "menu-modal": "menu-modal",
+    "header": "header",
+    "footer": "footer",
+    "modal": [
+        "modal-form:folder"
+        //"modal-video:folder"
+    ]
+    //"preloader": "preloader"
+}

@@ -1,0 +1,14 @@
+.menu {
+    --dp-block: block;
+    display: var(--dp-block);
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+            margin-right: size(40);
+        }
+    }
+    &__link {
+        color: currentColor;
+    }
+}
